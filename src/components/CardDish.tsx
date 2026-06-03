@@ -36,7 +36,7 @@ export default function CardDish({ dish }: CardDishProps) {
     const theme = useTheme(); // Получаем текущую тему MUI для адаптивных цветов
 
     // Деструктуризация объекта dish для удобства
-    const { name, description, price, category, image } = dish;
+    const {  name, description, price, category, image } = dish;
 
     // Состояние для управления уведомлением о добавлении в корзину
     const [snackbarOpen, setSnackbarOpen] = useState(false);
