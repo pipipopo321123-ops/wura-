@@ -19,7 +19,6 @@ import {
     Fade,
     Chip,
     IconButton,
-    Tooltip,
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';

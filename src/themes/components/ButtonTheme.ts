@@ -1,4 +1,4 @@
-import { lightPalette, darkPalette, shadows, shape } from '../globalTheme.ts';
+import { lightPalette, darkPalette, shadows,} from '../globalTheme.ts';
 
 // ============================================================================
 // ТЕМА ДЛЯ КОМПОНЕНТА BUTTON

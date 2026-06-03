@@ -7,7 +7,6 @@ import {
     Button,
     Typography,
     Chip,
-    Box,
     Snackbar,
     Alert,
     useTheme,
@@ -124,7 +123,7 @@ export default function CardDish({ dish }: CardDishProps) {
                         position: 'relative',
                         overflow: 'visible', // Чтобы чип не обрезался
                         transition: theme.transitions.create(
-                            ['transform', 'box-shadow', 'border-color'],
+                            ['transform',  'border-color'],
                             { duration: theme.transitions.duration.shorter }
                         ),
                         transform: hovered ? 'translateY(-8px)' : 'translateY(0)',
@@ -155,7 +154,6 @@ export default function CardDish({ dish }: CardDishProps) {
                             color: chipTextColor,
                             fontWeight: 600,
                             fontSize: '0.75rem',
-                            boxShadow: theme.shadows[2],
                             zIndex: 1, // Поверх изображения
                             transition: theme.transitions.create('transform', {
                                 duration: theme.transitions.duration.shorter,
@@ -188,7 +186,6 @@ export default function CardDish({ dish }: CardDishProps) {
                                 height: '2.6em', // Фиксированная высота для 2 строк
                                 overflow: 'hidden',
                                 textOverflow: 'ellipsis',
-                                display: '-webkit-box',
                                 WebkitLineClamp: 2,
                                 WebkitBoxOrient: 'vertical',
                                 color: theme.palette.text.primary,
@@ -207,7 +204,6 @@ export default function CardDish({ dish }: CardDishProps) {
                                 height: '3em',
                                 overflow: 'hidden',
                                 textOverflow: 'ellipsis',
-                                display: '-webkit-box',
                                 WebkitLineClamp: 2,
                                 WebkitBoxOrient: 'vertical',
                                 fontSize: '0.875rem',
@@ -266,12 +262,11 @@ export default function CardDish({ dish }: CardDishProps) {
                                 borderRadius: 8,
                                 fontWeight: 600,
                                 fontSize: '0.9rem',
-                                transition: theme.transitions.create(['transform', 'box-shadow', 'background-color'], {
+                                transition: theme.transitions.create(['transform',  'background-color'], {
                                     duration: theme.transitions.duration.shorter,
                                 }),
                                 '&:hover': {
                                     transform: 'translateY(-2px)',
-                                    boxShadow: theme.shadows[8],
                                 },
                                 '&:active': {
                                     transform: 'translateY(0)',
@@ -299,7 +294,6 @@ export default function CardDish({ dish }: CardDishProps) {
                     sx={{
                         width: '100%',
                         borderRadius: 3,
-                        boxShadow: theme.shadows[8],
                         backgroundColor: theme.palette.success.main,
                         color: '#FFFFFF',
                         '& .MuiAlert-icon': {
