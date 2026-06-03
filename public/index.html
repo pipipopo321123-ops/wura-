@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#B5A8D5" /> <!-- Лавандовый для светлой темы -->
+    <meta
+      name="description"
+      content="Меню ресторана с пастельными тонами"
+    />
+    <title>Ресторан | Пастельное меню</title>
+    <!-- Подключаем шрифт Roboto для Material-UI -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <style>
+      /* Базовые стили для плавного переключения темы */
+      body {
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s ease;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Убираем скроллбар для чистого вида (опционально) */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #B5A8D5;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #8A7BB5;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>Вам необходимо включить JavaScript для работы этого приложения.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
